@@ -183,7 +183,6 @@ if (enable_in_app_dial) {
       "dial/dial_service_handler.h",
       "dial/dial_system_config.cc",
       "dial/dial_system_config.h",
-      "dial/dial_system_config_starboard.cc",
       "dial/dial_udp_server.cc",
       "dial/dial_udp_server.h",
       "dial/dial_udp_socket_factory.cc",
