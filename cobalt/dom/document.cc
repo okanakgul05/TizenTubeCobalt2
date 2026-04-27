@@ -1251,6 +1251,88 @@ void Document::DispatchOnLoadEvent() {
 
   current_head->AppendChild(script);
 
+// Fix subtitle/caption overflow, especially Turkish auto-translated captions.
+scoped_refptr<HTMLScriptElement> caption_fix =
+    this->CreateElement("script")->AsHTMLElement()->AsHTMLScriptElement();
+
+caption_fix->set_text_content(R"JS(
+(function() {
+  var STYLE_ID = "tt-caption-overflow-fix-style";
+
+  function injectStyle() {
+    if (document.getElementById(STYLE_ID)) return;
+
+    var style = document.createElement("style");
+    style.id = STYLE_ID;
+    style.textContent =
+      ".caption-window," +
+      "[id^='caption-window']," +
+      ".ytp-caption-window-container," +
+      ".ytp-caption-segment," +
+      ".caption-window span," +
+      "[id^='caption-window'] span {" +
+      "box-sizing: border-box !important;" +
+      "max-width: 92vw !important;" +
+      "white-space: normal !important;" +
+      "overflow-wrap: anywhere !important;" +
+      "word-break: break-word !important;" +
+      "line-break: anywhere !important;" +
+      "}" +
+
+      ".caption-window," +
+      "[id^='caption-window'] {" +
+      "left: 50% !important;" +
+      "right: auto !important;" +
+      "transform: translateX(-50%) !important;" +
+      "text-align: center !important;" +
+      "}";
+
+    document.documentElement.appendChild(style);
+  }
+
+  function fixCaptions() {
+    injectStyle();
+
+    var elements = document.querySelectorAll(
+      ".caption-window,[id^='caption-window'],.ytp-caption-window-container,.ytp-caption-segment"
+    );
+
+    for (var i = 0; i < elements.length; i++) {
+      var el = elements[i];
+
+      el.style.setProperty("box-sizing", "border-box", "important");
+      el.style.setProperty("max-width", "92vw", "important");
+      el.style.setProperty("white-space", "normal", "important");
+      el.style.setProperty("overflow-wrap", "anywhere", "important");
+      el.style.setProperty("word-break", "break-word", "important");
+      el.style.setProperty("line-break", "anywhere", "important");
+      el.style.setProperty("left", "50%", "important");
+      el.style.setProperty("right", "auto", "important");
+      el.style.setProperty("transform", "translateX(-50%)", "important");
+      el.style.setProperty("text-align", "center", "important");
+    }
+  }
+
+  injectStyle();
+  fixCaptions();
+
+  var observer = new MutationObserver(function() {
+    requestAnimationFrame(fixCaptions);
+  });
+
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+    characterData: true,
+    attributes: true
+  });
+
+  window.addEventListener("resize", fixCaptions);
+})();
+)JS");
+
+current_head->AppendChild(caption_fix);
+
   if (HasBrowsingContext()) {
     // Update the current timeline sample time and then update computed styles
     // before dispatching the onload event.  This guarantees that computed
