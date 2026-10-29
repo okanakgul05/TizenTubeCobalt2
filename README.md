@@ -43,3 +43,7 @@ For a better experience, preferably use TizenTube Cobalt on a [**Google TV certi
 - [Discord Server](https://discord.gg/m2P7v8Y2qR)
 - [Telegram Channel](https://t.me/tizentubecobaltofficial)
 - [Report Issues / Request Features](https://github.com/reisxd/TizenTube/issues)
+
+## Birikimli V21 altyazı değişiklikleri
+
+Test edilen V21 altyazı değişiklikleri, bütün TizenTube betik kaynakları ve Android yeniden paketleme araçları [caption-v21](caption-v21/README.md) klasöründedir. [V21 sürüm notları](caption-v21/release/v21/RELEASE_NOTES.md) doğrulama sonuçlarını ve bilinen sınırları açıklar. APK dosyası bu kaynak kodu yüklemesine dahil değildir.

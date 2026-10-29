@@ -1,0 +1,89 @@
+{
+  "kind": "Captured YouTube TV API browser checks with stubbed host lifecycle, network and rendering services",
+  "tests": 19,
+  "passed": 19,
+  "failed": 0,
+  "status": "passed",
+  "feature_sha256": "2bc6d8904f342d92ade21823ab5f51c81fef2a762e9968dfcc1730ceeef7b813",
+  "captured_player_sha256": "a5a75f763fb104f679a84aca23432930fac604fa81e9ed9d9a162d71c93507a3",
+  "physical_tv_tested": false,
+  "live_video_playback_tested": false,
+  "cases": [
+    {
+      "name": "v14_reproduces_CC_OFF_forced_selection",
+      "passed": true
+    },
+    {
+      "name": "CC_OFF_without_module_has_zero_mutations",
+      "passed": true
+    },
+    {
+      "name": "CC_OFF_QN_loaded_default_has_zero_mutations",
+      "passed": true
+    },
+    {
+      "name": "CC_ON_translates_once_without_repeated_loads",
+      "passed": true
+    },
+    {
+      "name": "CC_OFF_then_ON_same_video_selects_TR",
+      "passed": true
+    },
+    {
+      "name": "CC_ON_without_event_detected_by_poll",
+      "passed": true
+    },
+    {
+      "name": "manual_CC_OFF_stays_OFF_after_events",
+      "passed": true
+    },
+    {
+      "name": "CC_ON_OFF_ON_same_video_reselects_TR_once",
+      "passed": true
+    },
+    {
+      "name": "rapid_CC_toggles_no_overlap_or_resurrection",
+      "passed": true
+    },
+    {
+      "name": "own_setter_empty_unload_event_does_not_reenter",
+      "passed": true
+    },
+    {
+      "name": "manual_language_preserved_until_next_real_CC_activation",
+      "passed": true
+    },
+    {
+      "name": "video_transition_keeps_OFF_then_later_ON_works",
+      "passed": true
+    },
+    {
+      "name": "video_transition_with_host_CC_ON_selects_new_TR_once",
+      "passed": true
+    },
+    {
+      "name": "already_native_Turkish_not_reloaded",
+      "passed": true
+    },
+    {
+      "name": "already_TR_translation_not_reloaded",
+      "passed": true
+    },
+    {
+      "name": "missing_CC_state_API_safe_noop",
+      "passed": true
+    },
+    {
+      "name": "late_CC_state_API_then_ON_recovers",
+      "passed": true
+    },
+    {
+      "name": "CC_state_error_no_force_then_recovers",
+      "passed": true
+    },
+    {
+      "name": "existing_geometry_and_source_guard_preserved",
+      "passed": true
+    }
+  ]
+}

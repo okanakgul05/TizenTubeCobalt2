@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.apk
+*.dex
+*.jar
+*.class
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.key
+build/
+helper/insertion-test.js

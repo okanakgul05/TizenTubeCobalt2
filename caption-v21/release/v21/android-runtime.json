@@ -1,0 +1,16 @@
+{
+  "environment": "Android 11 x86 emulator with ARM translation",
+  "physical_tv_tested": false,
+  "video_caption_visual_tested": false,
+  "base_v20_install": true,
+  "update_over_v20": true,
+  "version_code": 20321,
+  "version_name": "2.0.3-caption-test.21",
+  "bundle_completed": true,
+  "fatal_exception_in_filtered_log": false,
+  "app_process_running": true,
+  "status": "passed",
+  "apk_sha256": "0ed86772dad17f33859eb2732ebbefc9289637f9dadca414aa600c17b6fb31e6",
+  "embedded_script_sha256": "e3fb49e189279cee01fcb51dd727bde5a6ff294f4450b06b6e436060fe07b913",
+  "provisional": false
+}

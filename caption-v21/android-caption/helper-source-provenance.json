@@ -1,0 +1,74 @@
+{
+  "origin": "Successful V2 Android helper retained unchanged through V21; compile stubs are not packaged.",
+  "files": [
+    {
+      "path": "helper/src/io/github/captiontest/CaptionScriptInstaller.java",
+      "original_sha256": "a5cf85517623fea94644ecb48267ecb989750f69b3c239ca989178f9ba93408e"
+    },
+    {
+      "path": "helper/stubs/org/chromium/url/GURL.java",
+      "original_sha256": "99b269727b1563fe3e8e3bc1b7a73d06ac4ab2191d3c7851b1a663fe25c26912"
+    },
+    {
+      "path": "helper/stubs/org/chromium/content_public/browser/GlobalRenderFrameHostId.java",
+      "original_sha256": "85966d1dc5d181ed1a5c126d1bf87a5c2a2b93da57a037700edf4ef70bb306e1"
+    },
+    {
+      "path": "helper/stubs/org/chromium/content_public/browser/JavaScriptCallback.java",
+      "original_sha256": "4b9ed32d8b575858786bfa3b84eab0feb50073f021e6e9e63bb374b127c61e65"
+    },
+    {
+      "path": "helper/stubs/org/chromium/content_public/browser/Page.java",
+      "original_sha256": "9d59f486d6f1f597fac0cc6c246b1aafde1cad1956cabd68e673fb82b1509118"
+    },
+    {
+      "path": "helper/stubs/org/chromium/content_public/browser/RenderFrameHost.java",
+      "original_sha256": "0b84ff4d2e70642281a2dcda22029d62d0586262d1b20f8cde1aa65b071d4953"
+    },
+    {
+      "path": "helper/stubs/org/chromium/content_public/browser/WebContents.java",
+      "original_sha256": "33f90730b191a682b977b75205c02ec68dfa775f7c62c8397e69e50ca4f530f6"
+    },
+    {
+      "path": "helper/stubs/org/chromium/content_public/browser/WebContentsObserver.java",
+      "original_sha256": "666c9155b6646bcd6488825f133f5f1fc95f3945164ff893c3aaf09797faf425"
+    },
+    {
+      "path": "helper/stubs/dev/cobalt/coat/CobaltActivity.java",
+      "original_sha256": "762e874a101e89f632a0ef334c993123daa363cf4983577b6f4715447629a948"
+    },
+    {
+      "path": "helper/tests/verify-insertion.mjs",
+      "original_sha256": "4e84d692b7a57f08d4ece5375b91e5567acb378884dc9767492dcd288d67dc6e"
+    },
+    {
+      "path": "helper/tests/org/chromium/content_public/browser/WebContentsObserver.java",
+      "original_sha256": "dd4909df5056ab0a4afaf8f766d485834efe402294a7bb258b11b70d447f95ba"
+    },
+    {
+      "path": "helper/tests/io/github/captiontest/CaptionScriptInstallerTest.java",
+      "original_sha256": "c6a43326c57c848c211b8b98a6bca06d90383a92189e22e0300d86e25e5a3156"
+    },
+    {
+      "path": "helper/tests/android/app/Activity.java",
+      "original_sha256": "ca8985f51c64435f540e6d58a1dcea58e11cf182459d1c2557bf4c1dfa91c3d4"
+    },
+    {
+      "path": "helper/tests/android/os/Handler.java",
+      "original_sha256": "8413950bddca8227902e8b6bbffa3d23eb3f954b6cb7f1c899e64fd0e1f1d660"
+    },
+    {
+      "path": "helper/tests/android/os/Looper.java",
+      "original_sha256": "6be03c9993b2834adfac27417b5b223e3e6ba05f85b4bbb013c53cdaff87659f"
+    },
+    {
+      "path": "helper/tests/android/util/Log.java",
+      "original_sha256": "da03b86af02400bca7ac6ddb3b433bc9a11ebbcf07fd72755e546ce7ca269b20"
+    },
+    {
+      "path": "helper/tests/android/content/res/AssetManager.java",
+      "original_sha256": "074bda08037eee39856471b464ccd0dbd9c40a121e046ee335bdb849d08a37fc"
+    }
+  ],
+  "test_runner_adaptation": "verify-insertion.mjs accepts an external generated fixture path to keep build/test output outside source."
+}

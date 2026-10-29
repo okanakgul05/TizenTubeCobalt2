@@ -1,0 +1,49 @@
+{
+  "apk": "TizenTube-Altyazi-Sinema-v21.apk",
+  "version": "2.0.3-caption-test.21",
+  "version_code": 20321,
+  "package": "io.github.captiontest.tizentube",
+  "size_bytes": 109596243,
+  "sha256": "0ed86772dad17f33859eb2732ebbefc9289637f9dadca414aa600c17b6fb31e6",
+  "script_sha256": "e3fb49e189279cee01fcb51dd727bde5a6ff294f4450b06b6e436060fe07b913",
+  "layout_source_sha256": "4b20da6b7100d0d416131f53a38c55ee09b0d748096e798e79c238e67bbd23d0",
+  "ui_css_sha256": "401f8491da0978d84e6e6a3a2690abad3f4ffb1ead1035938a4651e406183eb4",
+  "phrase_transform_sha256": "5f29028567ea300a9104094ee02cb309089af34286eac70171e57b339f3ded40",
+  "phrase_transport_sha256": "74489885db3ba2e63db205e6055867c0138ff86ae742835863826b0a7065d76c",
+  "default_caption_selection": {
+    "prior_approved_v15_sha256": "749d208db5a1eef9f10aea29b462ad78e7e2d3490c7e1155130bc9340be05bc5",
+    "current_sha256": "2bc6d8904f342d92ade21823ab5f51c81fef2a762e9968dfcc1730ceeef7b813",
+    "changed_from_prior_approved": true
+  },
+  "base_v20_sha256": "307d684651fadb8d2d9f2212c2167720ce11071c153bf5fd1f2baecdbf647aeb",
+  "certificate_sha256": "9039a8ea4c1e0e3c4c2298cc95796ab1a4370920cddc15b9997c412f71645c96",
+  "changed_zip_payloads": [
+    "AndroidManifest.xml",
+    "assets/caption-test/userScript.js"
+  ],
+  "payload_sha256": {
+    "classes.dex": "7684a960767c542c36bb0907aab44c6966fee63f93c027ccfcc5a73974014da3",
+    "classes2.dex": "9ddc10dad66bbd89d5e6dc7adef1536ff15796f90ad7ded777e66cc158ecc76b",
+    "classes3.dex": "7e1815bc9b25a45768cd457692be3248f2ff6ede409d346aecb2bea9f6e6f316",
+    "lib/arm64-v8a/libchrobalt.so": "f444c7894ec124634dcb3f27ab161227e384ab4cd3626fb0941fa219cc28aa12",
+    "lib/arm64-v8a/libchrome_crashpad_handler.so": "1c499c181167c5e94a2cef2eaaf1580555c0f6ea21ed3958a9413ebdda7a1887",
+    "lib/armeabi-v7a/libchrobalt.so": "f0ee971d57928d15c25384c4d4ffb378898e125b82f76a935d25fc7f6a02f5c5",
+    "lib/armeabi-v7a/libchrome_crashpad_handler.so": "b84e0365510fff8570430a287a3df65291fdb3bd20c42b2f1cf4879a36cf743e",
+    "classes4.dex": "4ac9db30c337f1b4132988ca864911d5705786d4d0548e5d6c4d64fcc61adf9a"
+  },
+  "upstream_TizenTube_commit": "f99945a84ff767bf14ad8c1146e8e3fd49a3d628",
+  "official_Cobalt_release": "reisxd/TizenTubeCobalt v2.0.3",
+  "full_Chromium_rebuild": false,
+  "private_signing_material_included": false,
+  "portable_tool_validation": {
+    "helper_fake_JVM_groups": 9,
+    "helper_separate_world_JS_groups": 6,
+    "helper_reproduces_exact_shipped_DEX": true,
+    "V20_to_V21_overlay_verified": true,
+    "overlay_changed_only_manifest_and_bundle": true,
+    "ZIP_CRC_and_16KiB_alignment_verified": true,
+    "external_environment_password_signing_verified_with_independent_QA_key": true,
+    "QA_private_key_retained": false,
+    "complete_official_base_recipe_run_end_to_end": false
+  }
+}

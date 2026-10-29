@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "release": "v21",
+  "version_name": "2.0.3-caption-test.21",
+  "version_code": 20321,
+  "package": "io.github.captiontest.tizentube",
+  "apk": {
+    "file": "TizenTube-Altyazi-Sinema-v21.apk",
+    "size_bytes": 109596243,
+    "sha256": "0ed86772dad17f33859eb2732ebbefc9289637f9dadca414aa600c17b6fb31e6"
+  },
+  "bundle": {
+    "file": "userScript.js",
+    "repository_path": "release/v21/userScript.js",
+    "apk_entry": "assets/caption-test/userScript.js",
+    "size_bytes": 733655,
+    "sha256": "e3fb49e189279cee01fcb51dd727bde5a6ff294f4450b06b6e436060fe07b913",
+    "matches_apk_entry": true
+  },
+  "signing_certificate_sha256": "9039a8ea4c1e0e3c4c2298cc95796ab1a4370920cddc15b9997c412f71645c96",
+  "base_v20_apk_sha256": "307d684651fadb8d2d9f2212c2167720ce11071c153bf5fd1f2baecdbf647aeb",
+  "changed_apk_entries": [
+    "AndroidManifest.xml",
+    "assets/caption-test/userScript.js"
+  ],
+  "packaging_verification": {
+    "certificate_identical_to_v20": true,
+    "native_and_dex_identical_to_v20": true,
+    "zip_compression_types_preserved": true,
+    "zip_crc_verified": true,
+    "zipalign_16kb_verified": true,
+    "apk_v2_v3_signatures_verified": true,
+    "caption_guard_sources_identical_to_v5": true,
+    "diagnostic_panel_absent_from_bundle": true
+  },
+  "source_hash_scope": "Cumulative modified production files and source tests. Raw byte hashes identify tested build inputs; LF-normalized hashes accommodate Git line-ending normalization.",
+  "source_files": {
+    "mods/userScript.js": {
+      "raw_bytes_sha256": "e153fae5f14b890260d00f66fc7901d299c31c3f859adb14022f8bc906e91fcd",
+      "lf_normalized_sha256": "e153fae5f14b890260d00f66fc7901d299c31c3f859adb14022f8bc906e91fcd"
+    },
+    "mods/features/adblock.js": {
+      "raw_bytes_sha256": "a983b7e0d83183e846f83c5c65d55c487b53b73ff8e68f6cf40da439153ecfbd",
+      "lf_normalized_sha256": "7d787a0b5e414ef65186767611e9476d223d616c1b7dec7182d33c1ca253117f"
+    },
+    "mods/features/captionDiagnostics.js": {
+      "raw_bytes_sha256": "c51994d034e3a265c4ee69efe69d489a79e695ee2ff820367cd0dea97acf0ca5",
+      "lf_normalized_sha256": "c51994d034e3a265c4ee69efe69d489a79e695ee2ff820367cd0dea97acf0ca5"
+    },
+    "mods/features/captionSourceGuard.js": {
+      "raw_bytes_sha256": "bf3c6e8e5caed46bdd96aaba9fd03b38d64985150e51d699b49a84ca3001cb4c",
+      "lf_normalized_sha256": "bf3c6e8e5caed46bdd96aaba9fd03b38d64985150e51d699b49a84ca3001cb4c"
+    },
+    "mods/features/translationCaptionLayout.js": {
+      "raw_bytes_sha256": "4b20da6b7100d0d416131f53a38c55ee09b0d748096e798e79c238e67bbd23d0",
+      "lf_normalized_sha256": "4b20da6b7100d0d416131f53a38c55ee09b0d748096e798e79c238e67bbd23d0"
+    },
+    "mods/features/captionPhraseBlocks.js": {
+      "raw_bytes_sha256": "74489885db3ba2e63db205e6055867c0138ff86ae742835863826b0a7065d76c",
+      "lf_normalized_sha256": "74489885db3ba2e63db205e6055867c0138ff86ae742835863826b0a7065d76c"
+    },
+    "mods/features/defaultTurkishCaptions.js": {
+      "raw_bytes_sha256": "2bc6d8904f342d92ade21823ab5f51c81fef2a762e9968dfcc1730ceeef7b813",
+      "lf_normalized_sha256": "2bc6d8904f342d92ade21823ab5f51c81fef2a762e9968dfcc1730ceeef7b813"
+    },
+    "mods/utils/captionSourceGuard.js": {
+      "raw_bytes_sha256": "7f4e6606afcb85d3c0897728e684121cfcee361281cce05cb287cb2899e0e507",
+      "lf_normalized_sha256": "7f4e6606afcb85d3c0897728e684121cfcee361281cce05cb287cb2899e0e507"
+    },
+    "mods/utils/captionPhraseBlocks.js": {
+      "raw_bytes_sha256": "5f29028567ea300a9104094ee02cb309089af34286eac70171e57b339f3ded40",
+      "lf_normalized_sha256": "5f29028567ea300a9104094ee02cb309089af34286eac70171e57b339f3ded40"
+    },
+    "mods/ui/ui.css": {
+      "raw_bytes_sha256": "401f8491da0978d84e6e6a3a2690abad3f4ffb1ead1035938a4651e406183eb4",
+      "lf_normalized_sha256": "a012d9ff96271576c0852936a324170d0189e9dc3bc172b2dd34e5ac541fd29b"
+    },
+    "tests/caption-all-tracks.test.mjs": {
+      "raw_bytes_sha256": "91e8e2f0ece47abad362741d679c8d7dda4fe747a816243bf0fdbeee82866322",
+      "lf_normalized_sha256": "91e8e2f0ece47abad362741d679c8d7dda4fe747a816243bf0fdbeee82866322"
+    },
+    "tests/caption-cinema-regression.test.mjs": {
+      "raw_bytes_sha256": "30f428522b0cd6ceac4d0d5b24046db6b3ac5d42ef9e2ac796c0a39c4892060a",
+      "lf_normalized_sha256": "30f428522b0cd6ceac4d0d5b24046db6b3ac5d42ef9e2ac796c0a39c4892060a"
+    },
+    "tests/caption-diagnostics.test.mjs": {
+      "raw_bytes_sha256": "7a9847d4735f2142eb757f1bd3b0ef98fa9d8bad3fad34f00194629dc82cff05",
+      "lf_normalized_sha256": "45ed42b8249beb8f6f794797966e5a82c013ddb479a7804f201a19639fcb4149"
+    },
+    "tests/caption-phrase-blocks.test.mjs": {
+      "raw_bytes_sha256": "bf664be75bed5ab57177d8485e336d20fb43ce283dde1eef6946879183eee9c9",
+      "lf_normalized_sha256": "e8da13a99f3a3d09785cdaf8fc3deaccfcc9b6f0a2f8ce542f6e9896a8e99ac5"
+    },
+    "tests/caption-phrase-profile.test.mjs": {
+      "raw_bytes_sha256": "d510de3f3879c19917ca4027cee2aca88c204f3fbe27d8549b1d1d67bc988b7a",
+      "lf_normalized_sha256": "d510de3f3879c19917ca4027cee2aca88c204f3fbe27d8549b1d1d67bc988b7a"
+    },
+    "tests/caption-phrase-transport.test.mjs": {
+      "raw_bytes_sha256": "9c72155dbd68e5f13bd116dba7960b6b6d39eca0b19f18da2d4882bded2295fd",
+      "lf_normalized_sha256": "9c72155dbd68e5f13bd116dba7960b6b6d39eca0b19f18da2d4882bded2295fd"
+    },
+    "tests/caption-readability-regression.test.mjs": {
+      "raw_bytes_sha256": "031790c705f70ff2d2f268686201f1043f773b773f32c1a1072a79c94f051edd",
+      "lf_normalized_sha256": "c725e61e2e1fa6407c083c91a6b5f143ae627bdd55b68e5bd6bf872f3d38f2bc"
+    },
+    "tests/caption-reading-speed.test.mjs": {
+      "raw_bytes_sha256": "ac703827f684ac56f35162a288d3ad00e3f5371f6e2822292dc9273b753d6751",
+      "lf_normalized_sha256": "ac703827f684ac56f35162a288d3ad00e3f5371f6e2822292dc9273b753d6751"
+    },
+    "tests/caption-simultaneous-fallback.test.mjs": {
+      "raw_bytes_sha256": "e86392fc5990f6a51f32c93b55974af0e22d207c292e7a27bbcaac0c88492bb5",
+      "lf_normalized_sha256": "e86392fc5990f6a51f32c93b55974af0e22d207c292e7a27bbcaac0c88492bb5"
+    },
+    "tests/caption-source-guard.test.mjs": {
+      "raw_bytes_sha256": "abfb67d87fa080d64272cbc8d8368fc4c06194f8416d757d5c3149bc7a6a8e3b",
+      "lf_normalized_sha256": "abfb67d87fa080d64272cbc8d8368fc4c06194f8416d757d5c3149bc7a6a8e3b"
+    },
+    "tests/default-caption-selection.test.mjs": {
+      "raw_bytes_sha256": "18ccd1df11e536af782e6cb94539770bada14b5f563fc21a6fcaef3341e30bf0",
+      "lf_normalized_sha256": "18ccd1df11e536af782e6cb94539770bada14b5f563fc21a6fcaef3341e30bf0"
+    },
+    "tests/translation-caption-layout.test.mjs": {
+      "raw_bytes_sha256": "ab9189576e93294ac0cda069a21c07d7f46fcd2b7e79f701b4c2610d5f27dc55",
+      "lf_normalized_sha256": "ab9189576e93294ac0cda069a21c07d7f46fcd2b7e79f701b4c2610d5f27dc55"
+    }
+  },
+  "test_summary": {
+    "source_tests": {
+      "passed": 123,
+      "failed": 0,
+      "report": "source-tests.json"
+    },
+    "captured_native_api_checks": {
+      "passed": 19,
+      "failed": 0,
+      "report": "native-api-tests.json"
+    },
+    "android_runtime": {
+      "status": "passed",
+      "report": "android-runtime.json"
+    }
+  },
+  "physical_tv_tested": false,
+  "video_caption_visual_tested": false
+}

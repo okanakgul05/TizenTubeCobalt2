@@ -1,0 +1,10 @@
+{
+  "kind": "Node.js source regression tests",
+  "command": "node --test tests/*.test.mjs",
+  "tests": 123,
+  "passed": 123,
+  "failed": 0,
+  "skipped": 0,
+  "status": "passed",
+  "includes_default_caption_selection_tests": 19
+}
